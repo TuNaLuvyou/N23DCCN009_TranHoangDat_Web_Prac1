@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# N23DCCN009_TranHoangDat_Web_Prac1
 
-## Getting Started
+## 👨‍🎓 Thông tin sinh viên
 
-First, run the development server:
+- **Họ và tên:** Trần Hoàng Đạt
+- **Mã số sinh viên:** N23DCCN009
+- **Lớp:** D23CQCN01-N
+- **Học phần:** Phát triển ứng dụng Web
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Giới thiệu dự án
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Đây là bài thực hành số 1 nhằm xây dựng một ứng dụng web bán hàng cơ bản (E-commerce) sử dụng framework **Next.js** và **Tailwind CSS**. Ứng dụng kết nối với **FakeStore API** để lấy dữ liệu sản phẩm thực tế.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Các tính năng chính:
 
-## Learn More
+- **Product Listing:** Hiển thị danh sách sản phẩm với bố cục Grid (Lưới) hỗ trợ Responsive (1 cột trên Mobile, 4 cột trên Desktop).
+- **Product Detail:** Xem chi tiết thông tin từng sản phẩm (tên, giá, mô tả, hình ảnh) thông qua Dynamic Routes (`/product/[id]`).
+- **Navigation:** Hệ thống điều hướng mượt mà giữa trang chủ và trang chi tiết bằng thẻ `Link` của Next.js.
+- **UI/UX:** Giao diện hiện đại, sạch sẽ, hỗ trợ hiển thị tốt trên mọi thiết bị di động.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Công nghệ sử dụng
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS
+- **API:** [FakeStoreAPI](https://fakestoreapi.com/)
+- **Version Control:** Git & GitHub
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Cấu trúc thư mục chính
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/page.js`: Trang chủ hiển thị danh sách sản phẩm.
+- `app/product/[id]/page.js`: Trang chi tiết sản phẩm dựa trên ID.
+- `components/`: Chứa các thành phần tái sử dụng (Navbar, ProductCard).
+- `public/`: Chứa các tài nguyên tĩnh như hình ảnh, biểu tượng.
+
+---
+
+## 💻 Cách chạy dự án trên máy cục bộ
+
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/TuNaLuvyou/N23DCCN009_TranHoangDat_Web_Prac1.git
+   npm install
+   npm run dev
+   ```
